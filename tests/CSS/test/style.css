@@ -1,0 +1,33 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+header{
+    background-color: rgb(93, 178, 13);
+
+}
+nav{
+    background-color: beige;
+}
+main{
+    background-color: azure;
+    font-size: small;
+}
+footer{
+    background-color: blueviolet;
+    padding: 5%;
+}
+
+li{
+    display: inline-block;
+    width: 50%;
+}
+h1{
+    text-align:justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+
+}
+p{
+    line-height: 10%;
+}
