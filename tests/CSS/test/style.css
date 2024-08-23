@@ -1,33 +1,62 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+a:visited{
+    color: blueviolet;
 }
 header{
-    background-color: rgb(93, 178, 13);
-
+    background-color: gray;
 }
 nav{
-    background-color: beige;
+    display: inline-block;
+    width: 80%;
+}
+nav img{
+    width: 10%;
+    position: relative;
+    top: 20px;
+}
+
+nav ul {
+    display: flex;                /* Makes the list horizontal */
+    justify-content: center;       /* Centers the list items horizontally */
+    list-style-type: none;         /* Removes the black dots (bullets) */
+    padding: 0;                    /* Removes default padding from the list */
+    margin: 0;                     /* Removes default margin from the list */
+}
+
+nav ul li {
+    margin: 0 15px;                /* Adds space between the list items */
+}
+
+nav ul li a {
+    text-decoration: none;         /* Removes underline from the links */
+    color: black;                  /* Changes the link color */
+    font-family: Arial, sans-serif;/* Sets the font */
+    font-size: 18px;               /* Adjusts the font size */
+}
+
+nav ul li a:hover {
+    color: blue;                   /* Changes link color on hover */
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    text-align: center;
 }
 main{
-    background-color: azure;
-    font-size: small;
+    background-color: yellow;
+
 }
 footer{
-    background-color: blueviolet;
-    padding: 5%;
+    background-color: gray;
 }
-
-li{
-    display: inline-block;
-    width: 50%;
-}
-h1{
-    text-align:justify;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aqua;
-
-}
-p{
-    line-height: 10%;
-}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts spacing between items */
+  }
+  
+  .grid img {
+    flex: 1 1 40%; /* Makes each image take up 40% of the width, adjusting for wrapping */
+    max-width: 100%; /* Ensures images don’t overflow their container */
+    margin: 10px; /* Optional: Adds space between images */
+    box-sizing: border-box; /* Ensures padding and margins are included in width calculations */
+  }
