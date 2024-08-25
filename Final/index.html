@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1>Interactive Photo Gallery</h1>
+        <section class="gallery">
+            <figure tabindex="0">
+                <img src="images/image1.jpg" alt="Beautiful Mountain View">
+                <figcaption>Mountain View</figcaption>
+            </figure>
+            <figure tabindex="0">
+                <img src="images/image2.jpg" alt="Calm Beach Scene">
+                <figcaption>Beach Scene</figcaption>
+            </figure>
+            <figure tabindex="0">
+                <img src="images/image3.jpg" alt="City Skyline at Night">
+                <figcaption>City Skyline</figcaption>
+            </figure>
+            <figure tabindex="0">
+                <img src="images/image4.jpg" alt="Forest Trail">
+                <figcaption>Forest Trail</figcaption>
+            </figure>
+            <figure tabindex="0">
+                <img src="images/image5.jpg" alt="Desert Landscape">
+                <figcaption>Desert Landscape</figcaption>
+            </figure>
+            <figure tabindex="0">
+                <img src="images/image6.jpg" alt="Snowy Mountain Peak">
+                <figcaption>Snowy Peak</figcaption>
+            </figure>
+        </section>
+        <section class="large-image-display">
+            <h2>Selected Image</h2>
+            <div id="large-image-container" class="image-container">
+                <img id="large-image" src="" alt="">
+                <p id="image-description">Hover over or focus on an image to see details here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Gallery Project</p>
+    </footer>
+</body>
+
+</html>
