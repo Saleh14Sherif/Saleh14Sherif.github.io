@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+img {
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+}
+
+.label {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Mobile View - default */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+/* Tablet View - triggers at 772px */
+@media (min-width: 772px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    figure {
+        border-radius: 50%;
+    }
+    .grid figure:last-child {
+        grid-column: span 2;
+    }
+}
+
+/* Large Screen View - triggers at 992px */
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    figure {
+        border-radius: 0;
+    }
+    .grid figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark Mode - assuming default is light */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #f1c40f;
+    }
+    figure {
+        background-color: #111;
+        color: #f1c40f;
+        border-color: black;
+    }
+}
